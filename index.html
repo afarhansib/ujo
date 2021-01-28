@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="expires" content="-1" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+		<title>Masuk - Umara WiFi</title>
+		<link rel="icon" type="image/png" href="assets/icon.png"/>
+		<link rel="stylesheet" type="text/css" href="assets/main.css">
+	</head>
+	<body>
+		<header>
+			<h1>UMARA WIFI</h1>
+		</header>
+		<main>
+		<section>
+			<a href="./biasa/" class="btn btn-danger">BUKA VERSI BIASA</a>
+		</section>
+		<section class="scan">
+			<a href="https://laksa19.github.io/myqr/" class="btn">SCAN KODE QR</a>
+		</section>
+		<section class="form">
+			<div class="toggler">
+				<button id="btn-voucher" disabled class="btn">Voucher</button>
+				<button id="btn-member" class="btn inactive">member</button>
+			</div>
+			<div class="card">
+				<div class="title">Masuk dengan voucher</div>
+				<div class="body">
+					<form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)">
+						<input type="hidden" name="popup" value="true">
+						<label for="username" id="label-username">Kode voucher</label>
+						<input type="text" name="username" value="$(username)" id="username">
+						<label class="hidden" for="password" id="label-password">Password</label>
+						<input class="hidden" type="password" name="password" id="password">
+						<a href="./status.html" class="btn">MASUK</a>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="alert">
+			<span>Error di sini</span>
+		</section>
+		<section>
+			<div class="card">
+				<div class="title">Daftar harga voucher</div>
+				<div class="body">
+					<table>
+						<thead>
+							<tr>
+								<th>Masa aktif</th>
+								<th>Harga</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2 Jam</td>
+								<td>Rp1.000</td>
+							</tr>
+							<tr>
+								<td>6 Jam</td>
+								<td>Rp2.000</td>
+							</tr>
+							<tr>
+								<td>11 Jam</td>
+								<td>Rp3.000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		<section class="info">
+			<div class="card">
+				<div class="title">Info</div>
+				<div class="body">
+					<p>Untuk pembelian voucher bisa menghubungi nomor di bawah ini</p>
+					<a href="https://api.whatsapp.com/send?phone=6281233745324" class="btn">0812 3374 5324</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>Powered by MikroTik RouterOS</p>
+		<p>Designed by <a href="https://afarhansib.github.io">afarhansib</a></p>
+	</footer>
+	<script src="assets/main.js"></script>
+</body>
+</html>
