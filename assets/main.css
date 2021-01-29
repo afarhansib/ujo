@@ -229,13 +229,13 @@ section.detail-sesi td {
   font-family: monospace;
 }
 
-section.detail-sesi input[type='submit'] {
+a.btn.submitgantinyabutton {
   margin-top: 1rem;
   text-align: center;
   background-color: var(--color-red);
 }
 
-section.logout input[type='submit'] {
+a.btn.submitgantinyabuttonlogout {
   background-color: var(--color-main);
 }
 
