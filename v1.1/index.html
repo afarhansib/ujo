@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="expires" content="-1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+		<title>Masuk - Ujo</title>
+		<link rel="icon" type="image/png" href="assets/icon.png"/>
+		<link rel="stylesheet" type="text/css" href="assets/main.css">
+		<link rel="stylesheet" type="text/css" href="assets/splide.min.css">
+	</head>
+	<body>
+		<header>
+			<h1>UJO</h1>
+		</header>
+		<main>
+		<section class="scan">
+			<a href="https://laksa19.github.io/myqr/" class="btn">SCAN KODE QR</a>
+		</section>
+		<section>
+			<a href="./status.html" class="btn btn-outline">COBA GRATIS</a>
+		</section>
+		<section class="slider">
+			<div id="image-slider" class="splide">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">
+							<a href="#ad1"><img src="assets/img1.jpg"></a>
+						</li>
+						<li class="splide__slide">
+							<a href="#ad2"><img src="assets/img2.jpg"></a>
+						</li>
+						<li class="splide__slide">
+							<a href="#ad3"><img src="assets/img3.jpg"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="form">
+			<div class="toggler">
+				<button id="btn-voucher" disabled class="btn">Voucher</button>
+				<button id="btn-member" class="btn inactive">member</button>
+			</div>
+			<div class="card">
+				<div class="title">Masuk dengan voucher</div>
+				<div class="body">
+					<form name="login" action="./status.html">
+						<label for="username" id="label-username">Kode voucher</label>
+						<input type="text" autofocus name="username" value="UJO" id="username">
+						<label class="hidden" for="password" id="label-password">Password</label>
+						<input class="hidden" type="password" name="password" id="password">
+						<input type="submit" value="masuk" class="btn">
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="alert danger">
+			<span>Error</span>
+		</section>
+		<section class="info">
+			<div class="card">
+				<div class="title">Tidak bisa masuk?</div>
+				<div class="body">
+					<p>Coba masuk menggunakan versi biasa di bawah ini</p>
+					<a href="./biasa/" class="btn">BUKA VERSI BIASA</a>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="card">
+				<div class="title">Daftar harga voucher</div>
+				<div class="body">
+					<table>
+						<thead>
+							<tr>
+								<th>Masa aktif</th>
+								<th>Harga</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2 jam</td>
+								<td>Rp1.000</td>
+							</tr>
+							<tr>
+								<td>6 jam</td>
+								<td>Rp2.000</td>
+							</tr>
+							<tr>
+								<td>11 jam</td>
+								<td>Rp3.000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+		<section class="info">
+			<div class="card">
+				<div class="title">Info</div>
+				<div class="body">
+					<p>Untuk pembelian voucher bisa menghubungi nomor di bawah ini</p>
+					<a href="https://api.whatsapp.com/send?phone=6281233745324" class="btn">0812 3374 5324</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>Powered by MikroTik RouterOS</p>
+		<p>Designed by <a href="https://afarhansib.github.io">afarhansib</a></p>
+	</footer>
+	<!-- hilangkan komentar dibawah untuk menampilkan tombol whatsapp -->
+		<!-- <a class="floating-whatsapp" href="https://api.whatsapp.com/send?phone=6281233745324">
+			<img src="./assets/whatsapp.svg">
+		</a> -->
+	<script src="assets/main.js"></script>
+	<script src="assets/splide.min.js"></script>
+	<script src="assets/splide.custom.js"></script>
+</body>
+</html>
